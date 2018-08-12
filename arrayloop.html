@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<p id="nameview"></p>
+<script type="text/javascript">
+var names=new Array("tom","jhon","mathew","william","dani");
+names[6]="micheal";
+names.push("bob");
+var marks=new Array(40,50,60,70,80,90,100);
+/*var result;
+var m=90;
+switch(m){
+case 100:
+result="very good";
+break;
+
+case 90:
+result=" good";
+break;
+}*/
+var a;
+var res;
+for(a=0,res="";a<names.length;a++){
+res+="<br>"+names[a];
+}
+document.getElementById("nameview").innerHTML=res;
+
+</script>
+</body>
+</html>
